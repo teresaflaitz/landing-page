@@ -19,9 +19,10 @@ body {
     display: flex;
     flex-grow: 1;
     justify-content: space-between;
-    padding: 20px;
+    padding: 20px 0;
     font-size: 24px;
     font-weight:bold;
+    margin: 0 200px;
 }
 
 .links-list {
@@ -41,7 +42,9 @@ a, p {
 
 .section-1 {
     display: flex;
-    padding: 40px;
+    padding: 40px 0;
+    justify-content: space-between;
+    margin: 0 200px;
 }
 
 .intro-text {
@@ -59,47 +62,66 @@ button {
     border-radius: 8px;
     border: none;
     padding: 10px 40px;
+    max-height: 40px;
+    font-size: 18px;
+    font-weight: 500px;
 }
 
 .picture {
-    background-color: #e5e7eb;
+    background-color: darkgray;
+    width: 500px;
 }
 
 .section-2 {
-
+    margin: 0 200px;
 }
 
 h2 {
     text-align: center;
     font-size: 36px;
+    margin-top: 40px;
 }
 
 .boxes {
     display: flex;
     justify-content: space-evenly;
+    margin-bottom: 100px;
+}
+
+.box-center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .box {
-    border: 5px solid #3882f6;
+    border: 4px solid #3882f6;
     width: 150px;
     height: 150px;
-    border-radius: 25px;
+    border-radius: 15px;
 }
 
 .subtext {
     text-align: center;
     max-width: 150px;
+    margin-top: 15px;
 }
 
 .quote {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     background-color: #E5E7EB;
     padding: 50px;
+    
+    
 }
 
 .quote-text {
     font-size: 36px;
     color: #1f2937;
-    font-weight: light;
+    font-weight: 100px;
+    max-width: 800px;
 }
 
 .quote-author {
@@ -109,9 +131,21 @@ h2 {
 }
 
 .sign-up {
+    display: flex;
+    background-color: #3882f6;
+    justify-content: center;
+    color:#f9faf8;
+    margin: 100px 200px;
+    gap: 80px;
+    border-radius: 10px;
+    padding: 20px 80px;
+}
 
+.white-border {
+    border: 1px solid #f9faf8;
 }
 
 .footer {
-
+    background-color: #1f2937;
+    text-align: center;
 }
