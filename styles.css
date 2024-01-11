@@ -2,7 +2,7 @@
 
 body {
     display: flex;
-    justify-content: column;
+    flex-direction: column;
     margin: 0;
     font-family: 'Roboto', sans-serif;
 }
@@ -12,6 +12,7 @@ body {
     flex-direction: column;
     flex-grow: 1;
     background-color: #1f2937;
+    color: #f9faf8;
 }
 
 .nav-bar {
@@ -19,8 +20,6 @@ body {
     flex-grow: 1;
     justify-content: space-between;
     padding: 20px;
-    background-color: #1f2937;
-    color: #f9faf8;
     font-size: 24px;
     font-weight:bold;
 }
@@ -30,25 +29,83 @@ body {
     margin: 0;
     padding: 0;
     gap: 30px;
-    font-weight: 300;
+    /*font-weight: 300;*/
 }
 
-a {
+a, p {
     text-decoration: none;
     color: #e5e7eb;
     font-size: 18px;
+    font-weight: 300;
 }
 
 .section-1 {
+    display: flex;
+    padding: 40px;
+}
 
+.intro-text {
+    max-width: 450px;
+}
+
+h1 {
+    font-size: 48px;
+    font-weight: extra-bold;
+}
+
+button {
+    color: inherit;
+    background-color: #3882f6;
+    border-radius: 8px;
+    border: none;
+    padding: 10px 40px;
+}
+
+.picture {
+    background-color: #e5e7eb;
 }
 
 .section-2 {
 
 }
 
-.quote {
+h2 {
+    text-align: center;
+    font-size: 36px;
+}
 
+.boxes {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.box {
+    border: 5px solid #3882f6;
+    width: 150px;
+    height: 150px;
+    border-radius: 25px;
+}
+
+.subtext {
+    text-align: center;
+    max-width: 150px;
+}
+
+.quote {
+    background-color: #E5E7EB;
+    padding: 50px;
+}
+
+.quote-text {
+    font-size: 36px;
+    color: #1f2937;
+    font-weight: light;
+}
+
+.quote-author {
+    font-size: 18px;
+    font-weight: bold;
+    text-align: right;
 }
 
 .sign-up {
